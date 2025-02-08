@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.landingPageBody {
+  --primary-color: #e9bb62;
+  background-color: #f2f2f2;
+  font-family: "Roboto", serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1260px;
+  margin-inline: auto;
+}
+
+.landingPageHeader {
+  padding: 2rem 3.75rem;
+  display: grid;
+  row-gap: 3rem;
+}
+
+/* Nav Bar */
+.homepageNav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 28px;
+  height: 4.5rem;
+  border-radius: 1rem;
+}
+
+.navLeft {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.leftLogo {
+  padding: 0.5rem;
+  height: 2.25rem;
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+}
+
+.leftTitle,
+.footerTitle {
+  font-weight: bold;
+  text-decoration: none;
+  color: unset;
+  font-size: 1.5rem;
+}
+
+.navRight {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  list-style: none;
+  margin: unset;
+  max-height: fit-content;
+}
+
+.rightList {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+li a {
+  text-decoration: none;
+  color: unset;
+  font-size: 0.875rem;
+}
+
+li {
+  position: relative;
+  overflow: hidden;
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease-in-out;
+}
+
+li:hover::before {
+  width: 100%;
+}
+
+li:hover :not(.loginButton) {
+  cursor: pointer;
+}
+
+.loginButton,
+.logoutButton,
+.leftButton,
+.sectionButton {
+  padding: 0.5rem 2rem;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: unset;
+  max-width: fit-content;
+  transition: all 0.25s ease-in-out;
+}
+
+.loginButton:hover,
+.logoutButton:hover,
+.leftButton:hover,
+.sectionButton:hover {
+  filter: brightness(0.975);
+  transform: scale(1.05);
+}
+
+/* Intro Section */
+.homepageIntro {
+  display: flex;
+  gap: 3rem;
+}
+
+.introLeft {
+  flex: 3;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 6.25rem;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.introRight {
+  flex: 3;
+  background-color: transparent;
+  border-radius: 1rem;
+}
+
+.leftSubtitle {
+  color: var(--primary-color);
+  font-size: 0.875rem;
+}
+
+.leftTop {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.topTitle {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.topParagraph {
+  font-size: 0.875rem;
+  padding-inline-end: 5rem;
+  opacity: 70%;
+}
+
+/* Divisor */
+.landingPageDivisor {
+  border-top: 1px solid black;
+  padding-bottom: 2rem;
+  margin-inline: 3.75rem;
+  opacity: 10%;
+}
+
+/* Features Section */
+.featuresSection {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 3.75rem;
+}
+
+.AISection,
+.reccomendationsSection,
+.ratingsSection {
+  border-radius: 1rem;
+  padding-block: 2rem;
+  padding-inline: 3rem;
+  background-color: white;
+  display: grid;
+  row-gap: 2rem;
+}
+
+.sectionTop {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.aiIcon,
+.reccomendationsIcon,
+.ratingsIcon {
+  background-color: var(--primary-color);
+  padding: 0.75rem;
+  max-width: fit-content;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.aiIcon img,
+.reccomendationsIcon img,
+.ratingsIcon img {
+  --img-size: 1.5rem;
+  height: var(--img-size);
+  width: var(--img-size);
+}
+
+.topText {
+  display: grid;
+  row-gap: 1rem;
+}
+
+.textTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.textParagraph {
+  font-size: 1rem;
+  opacity: 70%;
+  max-width: 15rem;
+}
+
+/* Footer Section */
+.landingPageFooter {
+  background-color: white;
+  padding-block: 1rem;
+  padding-inline: 3.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin-top: 2rem;
+}
+
+.footerTitle {
+  font-size: 1.25rem;
+}
+
+.footerParagraph {
+  opacity: 70%;
+  font-size: 0.875rem;
+}

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books landing page</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="landingPageStyle.css" />
+  </head>
+
+  <body class="landingPageBody">
+    <header class="landingPageHeader">
+      <nav class="homepageNav">
+        <div class="navLeft">
+          <a asp-controller="Home" asp-action="Homepage">
+            <img
+              src="/Images/logoplaceholder.svg"
+              alt="Book recommender logo"
+              class="leftLogo"
+            />
+          </a>
+          <a
+            class="leftTitle"
+            asp-area=""
+            asp-controller="Home"
+            asp-action="Homepage"
+            >Book reccomendations</a
+          >
+        </div>
+        <div class="navRight">
+          <ul class="rightList">
+            <li>
+              <a class="" asp-area="" asp-controller="" asp-action="">Try AI</a>
+            </li>
+            <li>
+              <a class="" asp-area="" asp-controller="" asp-action=""
+                >Reccomendations</a
+              >
+            </li>
+            <li>
+              <a class="" asp-area="" asp-controller="" asp-action="">Books</a>
+            </li>
+            <li>
+              <a
+                class=""
+                asp-area=""
+                asp-controller="Account"
+                asp-action="Profile"
+                >Profile</a
+              >
+            </li>
+          </ul>
+          <!-- TODO: Implementare la condizione per cui viene mostrato o il login o il logout -->
+          <a class="loginButton" asp-area="" asp-controller="" asp-action=""
+            >Login</a
+          >
+          <!-- <a class="logoutButton" asp-area="" asp-controller="" asp-action=""
+            >Logout</a
+          > -->
+        </div>
+      </nav>
+      <div class="homepageIntro">
+        <div class="introLeft">
+          <p class="leftSubtitle">Powered by Arianna Franchetto</p>
+          <div class="leftTop">
+            <p class="topTitle">
+              Future energy: smart management and optimizations
+            </p>
+            <p class="topParagraph">
+              Turn your energy consumption into an efficient and sustainable
+              solution with our innovative application
+            </p>
+          </div>
+          <button class="leftButton">Try it now</button>
+        </div>
+        <div class="introRight">
+          <img src="/Images/topo.svg" alt="Alternate Text" />
+        </div>
+      </div>
+    </header>
+    <div class="landingPageDivisor"></div>
+    <section class="featuresSection">
+      <div class="AISection">
+        <div class="sectionTop">
+          <div class="aiIcon">
+            <img src="/Images/ai.svg" alt="ai icon" />
+          </div>
+          <div class="topText">
+            <p class="textTitle">AI</p>
+            <p class="textParagraph">
+              Learn the latest animation techniques to create stunning motion
+              design and captivate your audience.
+            </p>
+          </div>
+        </div>
+        <button class="sectionButton">Get Started</button>
+      </div>
+      <div class="reccomendationsSection">
+        <div class="sectionTop">
+          <div class="reccomendationsIcon">
+            <img src="/Images/reccomendations.svg" alt="ai icon" />
+          </div>
+          <div class="topText">
+            <p class="textTitle">Reccomendations</p>
+            <p class="textParagraph">
+              Learn the latest animation techniques to create stunning motion
+              design and captivate your audience.
+            </p>
+          </div>
+        </div>
+        <button class="sectionButton">Get Started</button>
+      </div>
+      <div class="ratingsSection">
+        <div class="sectionTop">
+          <div class="ratingsIcon">
+            <img src="/Images/ratings.svg" alt="ai icon" />
+          </div>
+          <div class="topText">
+            <p class="textTitle">Ratings</p>
+            <p class="textParagraph">
+              Learn the latest animation techniques to create stunning motion
+              design and captivate your audience.
+            </p>
+          </div>
+        </div>
+        <button class="sectionButton">Get Started</button>
+      </div>
+    </section>
+
+    <footer class="landingPageFooter">
+      <a class="footerTitle" asp-area="" asp-controller="" asp-action=""
+        >Book reccomendations</a
+      >
+      <p class="footerParagraph">
+        © 2025 Book reccomendations. All rights reserved. Powered by Arianna
+      </p>
+    </footer>
+  </body>
+</html>
