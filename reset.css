@@ -60,3 +60,7 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+:root {
+  --primary-color: #e9bb62;
+}
