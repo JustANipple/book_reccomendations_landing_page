@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Books landing page</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="layout.css" />
-    <link rel="stylesheet" href="authentication.css" />
+    <link rel="stylesheet" href="landingPageStyle.css" />
   </head>
+
   <body class="layoutBody">
     <header class="layoutHeader">
       <nav class="homepageNav">
@@ -51,7 +52,12 @@
             </li>
           </ul>
           <!-- TODO: Implementare la condizione per cui viene mostrato o il login o il logout -->
-          <a class="loginButton" asp-area="" asp-controller="" asp-action=""
+          <a
+            class="loginButton"
+            asp-area=""
+            asp-controller=""
+            asp-action=""
+            href="register.html"
             >Login</a
           >
           <!-- <a class="logoutButton" asp-area="" asp-controller="" asp-action=""
@@ -59,64 +65,73 @@
           > -->
         </div>
       </nav>
-    </header>
-
-    <div class="homepageIntro">
-      <div class="introLeft">
-        <img src="./Images/topo.svg" alt="topo" />
-      </div>
-      <div class="introRight">
-        <div class="rightContainer">
-          <div class="rightIntro">
-            <h1 class="introTitle">Welcome to Book Recommender</h1>
-            <p class="introSubtitle">Insert your credentials</p>
-          </div>
-          <form action="" class="registerForm">
-            <label for="name" class="nameLabel">
-              Name
-              <input
-                type="text"
-                id="name"
-                placeholder="Name"
-                class="nameInput"
-              />
-            </label>
-            <label for="email" class="emailLabel">
-              Email
-              <input
-                type="email"
-                id="email"
-                placeholder="Email"
-                class="emailInput"
-              />
-            </label>
-            <label for="password" class="passwordLabel">
-              Password
-              <input
-                type="password"
-                id="password"
-                placeholder="Password"
-                class="passwordInput"
-              />
-            </label>
-            <label for="confirmPassword" class="confirmPasswordLabel">
-              Password
-              <input
-                type="password"
-                id="confirmPassword"
-                placeholder="Confirm Password"
-                class="confirmPasswordInput"
-              />
-            </label>
-            <button type="submit" class="registerSubmit">Register</button>
-            <p class="registerParagraph">
-              Already a member?
-              <a href="login.html" class="registerButton">Sign In</a>
+      <div class="homepageIntro">
+        <div class="introLeft">
+          <p class="leftSubtitle">Powered by Arianna Franchetto</p>
+          <div class="leftTop">
+            <p class="topTitle">
+              Future energy: smart management and optimizations
             </p>
-          </form>
+            <p class="topParagraph">
+              Turn your energy consumption into an efficient and sustainable
+              solution with our innovative application
+            </p>
+          </div>
+          <button class="leftButton">Try it now</button>
+        </div>
+        <div class="introRight">
+          <img src="/Images/topo.svg" alt="Alternate Text" />
         </div>
       </div>
-    </div>
+    </header>
+    <div class="landingPageDivisor"></div>
+    <section class="featuresSection">
+      <div class="AISection">
+        <div class="sectionTop">
+          <div class="aiIcon">
+            <img src="/Images/ai.svg" alt="ai icon" />
+          </div>
+          <div class="topText">
+            <p class="textTitle">AI</p>
+            <p class="textParagraph">
+              Learn the latest animation techniques to create stunning motion
+              design and captivate your audience.
+            </p>
+          </div>
+        </div>
+        <button class="sectionButton">Get Started</button>
+      </div>
+      <div class="reccomendationsSection">
+        <div class="sectionTop">
+          <div class="reccomendationsIcon">
+            <img src="/Images/reccomendations.svg" alt="ai icon" />
+          </div>
+          <div class="topText">
+            <p class="textTitle">Reccomendations</p>
+            <p class="textParagraph">
+              Learn the latest animation techniques to create stunning motion
+              design and captivate your audience.
+            </p>
+          </div>
+        </div>
+        <button class="sectionButton">Get Started</button>
+      </div>
+      <div class="ratingsSection">
+        <div class="sectionTop">
+          <div class="ratingsIcon">
+            <img src="/Images/ratings.svg" alt="ai icon" />
+          </div>
+          <div class="topText">
+            <p class="textTitle">Ratings</p>
+            <p class="textParagraph">
+              Learn the latest animation techniques to create stunning motion
+              design and captivate your audience.
+            </p>
+          </div>
+        </div>
+        <button class="sectionButton">Get Started</button>
+      </div>
+    </section>
 
     <footer class="layoutFooter">
       <a class="footerTitle" asp-area="" asp-controller="" asp-action=""
